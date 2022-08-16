@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Goncharov Costruction Inc. website</title>
     <style>
       body,
@@ -16,28 +16,65 @@
         gap: 0.625%;
       }
 
-      a {
-        flex: 1;
-        text-decoration: none;
-        outline: none;
+      a:link,
+      a:visited,
+      a:focus {
+        background: lightgreen;
+      }
+
+      a:active {
+        color: white;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 20px;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        display: inline-block;
+        border-bottom: 10px solid darkgreen;
+        border: 1px solid black;
+        top: 0;
+        width: 100%;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline;
+        color: white;
         text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        flex: 1;
+        outline: none;
         line-height: 3;
         color: black;
       }
 
-      a:link,
-      a:visited,
-      a:focus {
-        background: yellow;
-      }
-
-      a:hover {
-        background: orange;
-      }
-
-      a:active {
-        background: red;
+      li a:hover {
+        background-color: black;
         color: white;
+      }
+
+      .logo {
+        margin-top: 1px;
+        margin-left: 0px;
+        background-color: black;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        margin: 0;
       }
     </style>
   </head>
@@ -45,26 +82,24 @@
   <body>
     <header>
       <div class="logo">
-        Goncharov Construction Inc.
+        <img src="images/logo.png" alt="logo pic" />
       </div>
-      <img src="pictures/logo.png" alt="logo pic" />
-
       <nav>
         <ul>
           <li>
             <a href="">Home</a>
           </li>
           <li>
-            <a href="About_Us">About us</a>
+            <a href="about_us.html">About us</a>
           </li>
           <li>
-            <a href="">Portfolio</a>
+            <a href="portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a href="">Models</a>
+            <a href="models.html">Models</a>
           </li>
           <li>
-            <a href="">Services/Contact us</a>
+            <a href="services.contuct_us.html">Services/Contact us</a>
           </li>
         </ul>
       </nav>
@@ -101,50 +136,44 @@
         <h1>
           About Us
         </h1>
-        <img src="images/balloon-sq6.jpg" alt="placeholder" class="feature" />
-        <p>
+
+        <img
+          src="images/model.jpeg"
+          width="1200"
+          height="850"
+          alt="placeholder"
+          class="feature"
+        />
+
+        <h3>
           As as a locally owned and operated business in Saskatoon you can count
           on the owner, Dmitry, making regular visits your job site ensuring
           that your project runs smoothly and no detail is overlooked.
-        </p>
-        <p>
+        </h3>
+        <h3>
           We promise to build you an affordable home that will stand the test of
           time. We’ll use our excellent long-standing relationships with
           industry suppliers and sub-contractors to your advantage.
-        </p>
+        </h3>
 
-        <p>
+        <h3>
           Our promise to you: When we’ve completed your new home or renovation
           project, we won’t just walk away. If there’s a problem and it’s our
           fault, we’ll fix it. It’s as simple as that. And for even more peace
           of mind.
-        </p>
+        </h3>
 
-        <p>We take pride in building better homes.</p>
+        <h3>We take pride in building better homes.</h3>
       </article>
-
-      <aside>
-        <h2>
-          Photography
-        </h2>
-        <ul class="photos">
-          <li>
-            <img src="images/balloon-sq1.jpg" alt="placeholder" />
-          </li>
-          <li>
-            <img src="images/balloon-sq2.jpg" alt="placeholder" />
-          </li>
-          <li>
-            <img src="images/balloon-sq3.jpg" alt="placeholder" />
-          </li>
-          <li>
-            <img src="images/balloon-sq4.jpg" alt="placeholder" />
-          </li>
-          <li>
-            <img src="images/balloon-sq5.jpg" alt="placeholder" />
-          </li>
-        </ul>
-      </aside>
     </main>
+
+    <footer>
+      <address>
+        <p>Contact us:</p>
+
+        <a href="gonconinc@gmail.com">e-mail: 1988gdi@gmail.com</a><br />
+        <a href="tel:+13062294508"> tel: (306) 229-45-08</a>
+      </address>
+    </footer>
   </body>
 </html>
